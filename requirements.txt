@@ -1,0 +1,9 @@
+tensorflow
+numpy
+opencv-python
+matplotlib
+scipy
+flask
+h5py
+Pillow
+gunicorn

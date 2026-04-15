@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Disease Detection</title>
+</head>
+<body>
+
+<h2>🌿 Plant Disease Detection</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <button type="submit">Predict</button>
+</form>
+
+{% if result %}
+    <h3>Result: {{ result }}</h3>
+    <h4>Confidence: {{ confidence }}%</h4>
+{% endif %}
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
+
+<hr>
+
+<h3>Live Camera Detection</h3>
+<img src="/video">
+
+</body>
+</html>
